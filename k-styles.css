@@ -11,9 +11,9 @@ body{
 }
 
 .nav-right{
-    position: absolute;
-    top: 20px;
-    right: 50px;
+    position: relative;
+    margin: auto;
+    text-align: center;
 }
 
 @media all and (max-width: 767px) {
@@ -23,15 +23,21 @@ body{
 }
 
 .nav-right a {
-    padding: 20px;
+    padding: 15px 20px;
     font-size: 1.5rem;
-    color: aliceblue !important;
+    color: white !important;
+    background-color: black;
+    font-weight: 200;
+}
+
+.top-nav{
+    width: 80%; max-width: 200px;
 }
 
 .logo-left{
-    position: absolute;
-    left: 50px;
-    top: 20px;
+    position: relative;
+    margin: auto;
+    padding: 50px;
 }
 
 .text-center{
@@ -39,26 +45,24 @@ body{
 }
 
 .vertical-center{
-    min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 50vh; /* These two lines are counted as one :-)       */
+    min-height: 70%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 70vh; /* These two lines are counted as one :-)       */
     display: flex;
     align-items: center;  
 }
 
 .hero{
     width: 100%;
-    height: 50vh;
-    background: linear-gradient(rgba(237, 28, 28, 0.5), rgba(163, 10, 10, 0.9)), url('images/businessBG.jpg');
+    height: 70vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url('images/bg.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 @media all and (max-width: 767px) {
     .hero {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
 
